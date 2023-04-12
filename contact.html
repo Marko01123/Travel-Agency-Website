@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Kontakt | Turistička agencija ConnectTravel</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="shortcut icon" href="assets/pic/logo_OkU_icon.ico">
+	
+	<script type="text/javascript">
+		function forma(){
+			var name = document.getElementById("fname");
+			var lastname = document.getElementById("lname");
+			var email = document.getElementById("emailaddr");
+			var title = document.getElementById("messagetitle");
+			var reason = document.getElementById("message-about");
+			var text = document.getElementById("message-text");
+			
+			var regExpForename = /^[A-Z][a-z]{2,19}$/;
+			var regExpLastname = /^[A-Z][a-z]{3,24}$/;
+			var regExpEmail = /^[a-z0-9\.]{3,64}\@[a-z0-9]{3,64}\.[a-z\.]{2,10}$/;
+			
+			if (!regExpForename.test(name.value)){
+				sForename.style.color = "red";
+				sForename.innerHTML = "Ime nije uneto u odgovarajućem formatu.";
+			} else {
+				sForename.style.color = "green";
+				sForename.innerHTML = "Ime je uneto u odgovarajućem formatu.";
+			}
+			
+			if(fname.value == ""){
+				sForename.innerHTML = "";
+				sForename.style.color = "red";
+			}
+			
+			
+			if (!regExpLastname.test(lastname.value)){
+				sLastname.style.color = "red";
+				sLastname.innerHTML = "Prezime nije uneto u odgovarajućem formatu.";
+			} else {
+				sLastname.style.color = "green";
+				sLastname.innerHTML = "Prezime je uneto u odgovarajućem formatu.";
+			}
+			
+			if(lname.value == ""){
+				sLastname.innerHTML = "";
+				sLastname.style.color = "red";
+			}
+			
+			if(!regExpEmail.test(email.value)){
+				sEmail.style.color = "red";
+				sEmail.innerHTML = "Email nije unet u odgovarajućem formatu.";
+			} else {
+				sEmail.style.color = "green";
+				sEmail.innerHTML = "Email je unet u odgovarajućem formatu.";
+			}
+			
+			if(emailaddr.value == ""){
+				sEmail.innerHTML = "";
+				sEmail.style.color = "red";
+			}
+			
+			if(title.value == ""){
+				sMessageTitle.style.color = "red";
+			} else {
+				sMessageTitle.style.color = "green";
+			}
+			
+			if(reason.value == "empty-option"){
+				sMessageAbout.style.color = "red";
+			} else {
+				sMessageAbout.style.color = "green";
+			}
+			
+			if(text.value == ""){
+				sMessageText.style.color = "red";
+			} else {
+				sMessageText.style.color = "green";
+			}
+			
+			if(sForename.style.color == "red" ||
+			   sLastname.style.color == "red" ||
+			   sEmail.style.color == "red" ||
+			   sMessageTitle.style.color == "red" ||
+			   sMessageAbout.style.color == "red" ||
+			   sMessageText.style.color == "red"){
+				sRezultat.innerHTML = "Popunite prazna polja u formi!";
+				sRezultat.style.color = "black";
+				document.getElementById("btnSend").disabled = true;
+			   } else {
+				sRezultat.innerHTML = "Sve je okej. Sada možete poslati poruku.";
+				sRezultat.style.color = "black";
+				document.getElementById("btnSend").disabled = false;;
+			   }
+		}
+		
+		function obrisi(){
+			document.getElementById("sRezultat").innerHTML = "";
+			document.getElementById("sForename").innerHTML = "";
+			document.getElementById("sLastname").innerHTML = "";
+			document.getElementById("sEmail").innerHTML = "";
+		}
+	</script>
+</head>
+
+<body>
+	<div id="main-holder-contact">
+		<header>
+			<div id="top">
+				<div id="top-contact">
+					<div class="contact">
+						<a href="mailto:contact@connecttravel.com">contact@connecttravel.com</a>
+					</div>
+				
+					<div class="contact">
+						<p>011/1234567</p>
+					</div>
+				
+					<div class="contact">
+						<p>062/9876543</p>
+					</div>
+				</div>
+				
+				<div id="working-time">
+					<p>pon-pet 10h - 19h | sub 10h - 14h</p>
+				</div>
+			</div>
+			
+			<div class="cleaner">
+			</div>
+			
+			<div id="top-bottom">
+				<div id="logo">
+					<a href="index.html"><img src="assets/pic/logo.png" alt="ConnectTravel-logo"></a>
+				</div>
+			
+				<nav>
+					<ul>
+						<li><a href="index.html">Početna stranica</a></li>
+						<li><a href="summer.html">Letovanje</a></li>
+						<li><a href="winter.html">Zimovanje</a></li>
+						<li><a href="serbia.html">Putovanja po Srbiji</a></li>
+						<li><a href="about.html">O nama</a></li>
+						<li><a href="contact.html">Kontakt</a></li>
+					</ul>
+				</nav>
+				
+				<div class="cleaner">
+				</div>
+			</div>
+		</header>
+		
+		<div id="center-contact">
+			<h1>Kontakt:</h1>
+			
+			<div id="contact-info">
+				<p>Za sva eventualna pitanja, nejasnoće oko aranžmana i ponuda, ili probleme na web sajtu slobodno nas 
+				kontaktirajte telefonom od ponedeljka do petka u vremenu od 10-19h i subotom od 10-14h, 
+				a mailom ili popunjavanjem formulara za kontakt od 00-24h. Odgovorićemo u najkraćem mogućem roku, 
+				a najkasnije u roku od 24h.</p>
+				
+				<p>Turistička agencija ConnectTravel nalazi se u Zaplanjskoj ulici broj 78 na Voždovcu.</p>
+				<p>Ako dolazite iz pravca grada autobusom 26, siđite na autobuskoj stanici "Zaplanjska 2",
+				drugoj po redu od Tržnog centra Stadion. Ukoliko dolazite iz pravca Konjarnika, Banjice ili Novog Beograda
+				i Zemuna autobusima 50 ili 18, siđite na autobuskoj stanici "Zaplanjska"</p>
+				<p>GSP autobuske linije: 18, 26 i 50</p>
+				<p>RADNO VREME:<br/>
+				Radnim danima: <b>10-19h</b><br/>
+				Subotom: <b>10-14h</b></br>
+				Nedeljom: Ne radimo</p>
+			
+				<div id="contact-numbers">
+					<h3>Turistička agencija ConnectTravel</h3>
+					<h3>tel: 011/1234567</h3>
+					<h3>mob: 062/9876543</h3>
+					<a href="mailto:contact@connecttravel.com">contact@connecttravel.com</a><br/><br/>
+					<div id="short-links">
+						<a href="https://www.facebook.com"><img src="assets/pic/icon_facebook_footer.png" alt="facebook-logo"></a>
+						<a href="https://twitter.com/"><img src="assets/pic/icon_twitter_footer.png" alt="twitter-logo"></a>
+						<a href="https://www.instagram.com/"><img src="assets/pic/icon_instragram_footer.png" alt="instagram-logo"></a>
+						<a href="https://www.youtube.com/"><img src="assets/pic/icon_youtube_footer.png" alt="youtube-logo"></a>
+						<a href="https://www.pinterest.com/"><img src="assets/pic/icon_pinterest_footer.png" alt="pinterest-logo"></a>
+					</div>
+				</div>
+			
+				<div id="formular">
+					<h3>Pišite nam:</h3>
+					<form name="kontakt-formular" action="#" method="POST">
+						
+						<div class="red">
+							<div class="form-text">
+								<label for="fname">Ime:</label>
+							</div>
+							<div class="form-input">
+								<input type="text" id="fname" name="ime" placeholder="Vaše ime je..." onkeyup="forma();"><br/>
+								<span id="sForename"></span>
+							</div>
+							<div class="cleaner">
+							</div>
+						</div>
+						
+						
+						<div class="red">
+							<div class="form-text">
+								<label for="lname">Prezime:</label>
+							</div>
+							<div class="form-input">
+								<input type="text" id="lname" name="prezime" placeholder="Vaše prezime je..." onkeyup="forma();"><br/>
+								<span id="sLastname"></span>
+							</div>
+							<div class="cleaner">
+							</div>
+						</div>
+						
+						
+						<div class="red">
+							<div class="form-text">
+								<label for="email">E-mail adresa:</label>
+							</div>
+							<div class="form-input">
+								<input type="text" id="emailaddr" name="email" placeholder="Vaša e-mail adresa je..." onkeyup="forma();"><br/>
+								<span id="sEmail"></span>
+							</div>
+							<div class="cleaner">
+							</div>
+						</div>
+							
+						
+						<div class="red">
+							<div class="form-text">
+								<label for="title">Naslov poruke:</label>
+							</div>
+							<div class="form-input">
+								<input type="text" id="messagetitle" name="title" placeholder="Naslov Vaše poruke je..." onkeyup="forma();"><br/>
+								<span id="sMessageTitle"></span>
+							</div>
+							<div class="cleaner">
+							</div>
+						</div>	
+							
+							
+						<div class="red">
+							<div class="form-text">
+								<label for="message">Razlog popunjavanja formulara:</label>
+							</div>
+							<div class="form-input">
+								<select id="message-about" name="message-about" onkeyup="forma();">
+									<option value="empty-option" selected></option>
+									<option value="problem">Problem</option>
+									<option value="sugestija">Sugestija</option>
+									<option value="pohvala">Pohvala</option>
+									<option value="zalba">Žalba</option>
+									<option value="drugo">Drugo</option>
+								</select><br/>
+								<span id="sMessageAbout"></span>
+							</div>
+							<div class="cleaner">
+							</div>
+						</div>	
+							
+						
+						<div class="red">
+							<div class="form-text">
+								<label for="message-text">Poruka:</label>
+							</div>
+							<div class="form-input">
+								<textarea id="message-text" name="message-text" placeholder="Napišite poruku..." style="height:200px" onkeyup="forma();"></textarea>
+							</div>
+								<span id="sMessageText"></span>
+							<div class="cleaner">
+							</div>
+						</div>	
+					
+							
+						<div class="red">
+							<span id="sRezultat"></span>
+							<input type="submit" id="btnSend" value="Pošalji" onclick="obrisi()">
+							<input type="reset" id="btnRestart" value="Resetuj" onclick="obrisi()">
+							<div class="cleaner">
+							</div>
+						</div>	
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="footer-div">
+				<h3>Informacije</h3>
+				<p>Sajt Turističke agencije ConnectTravel je napravljen isključivo radi polaganja ispita iz predmeta Internet i web tehnologije na Fakultetu za informatiku i računarstvo, Univerzitet Singidunum.</p> 
+				<p>Svaka navedena stavka na ovom web sajtu je izmišljena i ne odnosi se ni na jedno postojeće fizičko/pravno lice i/ili kompaniju.</p>
+				<p>Sve prikazane slike su iz privatne arhive ili su slike koje su preuzete sa sajta 
+				<a href="https://pixabay.com">Pixabay.com</a>, koje su besplatne za korišćenje u komercijalne svrhe.</p> 
+			</div>
+			
+			<div class="footer-div">
+				<h3>Kako do nas?</h3>
+				<p>Turistička Agencija ConnectTravel</p>
+				<p>Zaplanjska 78, Beograd</p>
+				<p>tel: 011/1234567</p>
+				<p>mob: 062/9876543</p>
+				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.55951048704!2d20.49291291549685!3d44.769397479098885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70ef7f41d725%3A0xde91b95b436d3328!2sZaplanjska+72-80%2C+Beograd!5e0!3m2!1sen!2srs!4v1548866754978" width="300" height="160" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			
+			<div class="footer-div">
+				<h3>Kontakt</h3>
+				<div id="social-media">
+					<a href="https://www.facebook.com"><img src="assets/pic/icon_facebook_footer.png" alt="facebook-logo"></a>
+					<a href="https://twitter.com/"><img src="assets/pic/icon_twitter_footer.png" alt="twitter-logo"></a>
+					<a href="https://www.instagram.com/"><img src="assets/pic/icon_instragram_footer.png" alt="instagram-logo"></a>
+					<a href="https://www.youtube.com/"><img src="assets/pic/icon_youtube_footer.png" alt="youtube-logo"></a>
+					<a href="https://www.pinterest.com/"><img src="assets/pic/icon_pinterest_footer.png" alt="pinterest-logo"></a>
+				</div>
+				
+				<p>Prijavite se na newsletter za više informacija o ponudama i popustima: </p>
+				<input type="text" id="e-mail" maxlength="64" size="32" placeholder="example@connecttravel.com"/>
+				<input type="button" id="send" name="send" value="Pošalji"/>
+			</div>
+			
+			<div class="footer-div">
+				<h3>ConnectTravel</h3>
+				<ul>
+					<li><a href="index.html">Početna stranica</a></li>
+					<li><a href="summer.html">Letovanje</a></li>
+					<li><a href="winter.html">Zimovanje</a></li>
+					<li><a href="serbia.html">Putovanja po Srbiji</a></li>
+					<li><a href="about.html">O nama</a></li>
+					<li><a href="contact.html">Kontakt</a></li>
+				</ul>
+			</div>
+			
+			<p>Marko Ranković, Univerzitet Singidunum. All rights reserved. | Design: Marko Ranković | Images: M. Ranković , <a href="https://pixabay.com">www.pixabay.com</a></p>
+		</footer>
+	</div>
+</body>
+</html>

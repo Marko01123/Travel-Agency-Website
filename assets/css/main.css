@@ -1,0 +1,742 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px auto;
+	position:static;
+}
+
+body {
+	font-family: "Calibri Light", Times, serif;
+	min-width: 1500px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#main-holder-contact{
+	width: 100%;
+	background-image: url("../../backgrounds/paper-2500942_1920.jpg");
+}
+
+#main-holder-index{
+	width: 100%;
+	background-color:#f2f2f2;
+}
+
+#main-holder-summer{
+	width: 100%;
+	background-image: url("../../backgrounds/sea-1351559_1920.jpg");
+	background-repeat:round;
+}
+
+#main-holder-winter{
+	width: 100%;
+	background-image: url("../../backgrounds/snow-1186174_1920.jpg");
+	background-repeat:round;
+}
+
+#main-holder-serbia{
+	width: 100%;
+	background-image: url("../../backgrounds/nikola-tesla-3026247_1920.jpg");
+}
+
+#main-holder-about{
+	width: 100%;
+	background-color:#f2f2f2;
+}
+
+header {
+	width: 100%;
+}
+
+header > #top {
+	background-color: black;
+	color: white;
+	height: 30px;
+	text-align: center;
+}
+
+header > #top > #top-contact{
+	padding-left:120px;
+	float: left;
+}
+
+header > #top > #top-contact > .contact {
+	display: inline-block;
+	border-right: 2px solid;
+	border-color: white;
+	height: 100%;
+	padding: 4px 20px;
+}
+
+header > #top > #top-contact > .contact > a{
+	color: white;
+}
+
+header > #top > #working-time{
+	padding-right: 120px;
+	float: right;
+	height: 100%;
+	padding-top: 4px;
+}
+
+.cleaner{
+	clear: both;
+}
+
+header > #top-bottom {
+	width: 100%;
+	height: 200px;
+	background-color:white;
+	margin-bottom: 20px;
+}
+
+header > #top-bottom > #logo {
+	float: left;
+	height: 100%;
+	margin-left:80px;
+	width: 430px;
+}
+
+header > #top-bottom > #logo > a{
+	opacity: 0.99;
+}
+
+header > #top-bottom > #logo > a > img {
+	width: 40%;
+}
+
+header > #top-bottom > nav{
+	width: 850px;
+	height: 100%;
+	text-align: left;
+	float:right;
+	padding-top: 80px;
+	overflow: hidden;
+	vertical-align: top;
+	position: static;
+}
+
+header > #top-bottom > nav > ul{
+	list-style: none;
+}
+
+header > #top-bottom > nav > ul > li {
+	text-transform: uppercase;
+	display:inline-block;
+}
+
+header > #top-bottom > nav > ul > li > a{
+	font-size: 15pt;
+	font-weight: bold;
+	color: black;
+	margin-right:16px;
+	display:block;
+}
+
+header > #top-bottom > nav > ul > li> a:active {
+	background-color: #ff0000;
+	border-radius: 10px;
+	color: white;
+}
+
+header > #top-bottom > nav > ul > li > a:hover{
+	background-color: #80ffe5;
+	border-radius: 10px;
+	color: black;
+}
+
+
+#main-holder-contact > #center-contact{
+	width: 100%;
+	margin-top: 50px;
+	color: black;
+}
+
+#main-holder-about > #center-about{
+	width: 100%;
+	margin-top: 50px;
+	color: black;
+}
+
+#main-holder-winter > #center-winter{
+	width: 100%;
+	margin-top: 50px;
+	color: #0d0d0d;
+}
+
+#main-holder-serbia > #center-serbia{
+	width: 100%;
+	margin-top: 50px;
+	color: black;
+}
+
+#main-holder-summer > #center-summer{
+	width: 100%;
+	color: white;
+	margin-top: 50px;
+}
+
+#main-holder-contact > #center-contact > h1{
+	font-size: 40pt;
+	font-weight: bolder;
+	font-style: italic;
+	text-align: center;
+	margin-bottom:20px;
+}
+
+#main-holder-contact > #center-contact > #contact-info{
+	width: 93%;
+	margin: 0px auto;
+	background-color:#cccccc;
+	margin-bottom: 65px;
+	padding-bottom: 30px;
+	padding-top: 3px;
+	border-radius: 15px;
+	border: 1px solid;
+}
+
+#main-holder-contact > #center-contact > #contact-info > p{
+	margin: 20px 50px;
+	color:black;
+	font-weight: bolder;
+	font-style: italic;
+	font-size: 18pt;
+}
+
+#main-holder-contact > #center-contact > #contact-info > p > b{
+	color: #800000;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #contact-numbers{
+	text-align: center;
+	color:black;
+	font-size: bolder;
+	font-style: italic;
+	font-size: 14pt;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #contact-numbers > a{
+	color: black;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #contact-numbers > #short-links > a:hover{
+	opacity: 0.8;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #contact-numbers > #short-links > a > img{
+	padding: 0px 5px;
+	width: 3.2%;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #formular{
+	padding-top: 50px;
+	color:black;
+	font-style: italic;
+	font-size: bolder;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #formular > h3{
+	font-size: 28pt;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #formular > form{
+	width: 83%;
+	margin: 15px auto;
+	background-color: rgba(26, 140, 255, 0.6);
+	border-radius: 15px;
+	padding: 30px;
+	border: 1px solid;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #formular > form > .red{
+	width: 90%;
+	margin-top: 30px;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #formular > form > .red > .form-text{
+	float: left;
+	width: 40%;
+	margin-top: 3px;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #formular > form > .red > .form-text > label{
+	font-size: 21pt;
+	font-weight:bold;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #formular > form > .red > .form-input{
+	float: right;
+	width: 60%;
+	margin-top: 3px;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #formular > form > .red > .form-input > input{
+	font-size: 17pt;
+	width: 100%;
+	border: 1px solid;
+	border-radius: 4px;
+	padding-left: 10px;
+}	
+
+#main-holder-contact > #center-contact > #contact-info > #formular > form > .red > .form-input > select {
+	margin-bottom: 100px;
+	font-size: 15pt;
+	width: 100%;
+	padding-left: 10px;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #formular > form > .red > .form-input > textarea{
+	width: 100%;
+	font-size: 15pt;
+	border: 1px solid;
+	border-radius: 4px;
+	padding-left: 10px;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #formular > form > .red > input{
+	color: white;
+	background-color: blue;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	float: right;
+	width: 10%;
+	margin-left: 50px;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #formular > form > .red > span{
+	float:left;
+	font-weight: bold;
+	margin-left: 35px;
+	font-size: 15pt;
+}
+
+#main-holder-contact > #center-contact > #contact-info > #formular > form > .red > input:hover{
+	background-color:#0052cc;
+	
+}
+
+#main-holder-contact > #center-contact > #contact-info > #formular > form > .red > input:active{
+	background-color:#00b359;
+	opacity: 0.9;
+}
+
+#main-holder-about > #center-about > h1{
+	font-size: 40pt;
+	font-weight: bolder;
+	font-style: italic;
+	text-align: center;
+	margin-bottom:20px;
+	padding-top: 15px;
+}
+
+#main-holder-about > #center-about > #aboutus{
+	width: 94%;
+	margin: 0px auto;
+	background-color: rgb(77, 38, 0, 0.3);
+	margin-bottom: 100px;
+	padding-bottom: 30px;
+	padding-top: 3px;
+	border-radius: 15px;
+}
+
+#main-holder-about > #center-about > #aboutus > p{
+	margin: 20px 50px;
+	color:black;
+	font-size: bolder;
+	font-style: italic;
+	font-size: 19pt;
+}
+
+#main-holder-about > #center-about > #aboutus > ul{
+	list-style: bullet;
+	padding-left: 110px;
+}
+
+#main-holder-about > #center-about > #aboutus > ul > li{
+	color:black;
+	font-size: bolder;
+	font-style: italic;
+	font-size: 19pt;
+}
+
+.destination{
+	margin-bottom: 100px;
+}
+
+.destination > h1{
+	font-size: 40pt;
+	font-weight: bolder;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-top: 15px;
+}
+
+#main-holder-serbia > #center-serbia > .destination > h1{
+	background-color: rgba(179, 224, 255, 0.9);
+	color:black;
+	border-radius: 5px;
+	padding:0px auto;
+	width: 45%;
+}
+
+#main-holder-serbia > #center-serbia > .destination > .destination-place{
+	margin-bottom: 100px;
+}
+
+.destination > .destination-place{
+	width: 94%;
+	margin: 0px auto;
+	border-radius: 15px;
+}
+
+#main-holder-summer > #center-summer > .destination > .destination-place{
+	background-color: rgba(102, 151, 204, 0.95)
+}
+
+#main-holder-winter > #center-winter > .destination > .destination-place{
+	background-color:rgba(230, 243, 255, 0.9);
+}
+
+#main-holder-serbia > #center-serbia > .destination > .destination-place{
+	background-color: rgba(179, 224, 255, 0.93);
+}
+
+.destination > .destination-place > h3 {
+	font-size: 25pt;
+	font-weight: bolder;
+	margin-bottom: 10px;
+	padding-left: 32px;
+	padding-top: 15px;
+}
+
+
+.destination > .destination-place > p{
+	font-weight: bold;
+	width: 95%;
+	margin: 15px auto;
+	font-size: 14pt;
+}
+
+.destination > .destination-place > p > b{
+	text-transform: uppercase;
+}
+
+.destination > .destination-place > article{
+	width: 95%;
+	margin: 0px auto;
+	font-size: 14pt;
+}
+
+.destination > .destination-place > article > p {
+	margin: 15px 0px;
+}
+
+.destination > .destination-place > table{
+	font-weight: bold;
+	text-align: center;
+	background-color: #ff0000;
+	color: white;
+}
+
+#main-holder-serbia > #center-serbia > .destination > .destination-place > h4{
+	font-size: 30pt;
+	font-weight: bolder;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-align: center;
+	color: #990000;
+}
+
+#main-holder-summer > #center-summer > .destination > .destination-place > p.last{
+	margin-bottom:40px;
+}
+
+#main-holder-winter > #center-winter > .destination > .destination-place > p.last{
+	margin-bottom:40px;
+}
+
+#main-holder-summer > #center-summer > .destination > .destination-place > table{
+	border-color: white;
+	border-style: dashed;
+	margin-bottom: 100px;
+}
+
+#main-holder-winter > #center-winter > .destination > .destination-place > table{
+	border-color: black;
+	background-color:#ff1a1a;
+	border-style: dashed;
+	margin-bottom: 100px;
+}
+#main-holder-serbia > #center-serbia > .destination > .destination-place > #cenovnik{
+	width: 49%;
+	margin: auto;
+	margin-top:50px;
+	margin-bottom: 100px;
+}
+
+#main-holder-serbia > #center-serbia > .destination > .destination-place > #cenovnik > table{
+	border-color: black;
+	border-style: dashed;
+	margin-top:10px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #ff1a1a;
+	color:white;
+}
+
+#main-holder-serbia > #center-serbia > .destination > .destination-place > #cenovnik > p{
+	text-align: center;
+	font-weight: bold;
+	font-size: 11pt;
+	margin: 0px;
+	padding-left:5px;
+}
+
+.destination > .destination-place > .pictures {
+	width: 97%;
+	margin: 0px auto;
+	margin-bottom: 30px;
+}
+
+.destination > .destination-place > .pictures > .vacation-pictures {
+	width: 48%;
+	display:inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin: 0px auto;
+	margin-bottom:15px;
+}
+
+.destination > .destination-place > .pictures > .vacation-pictures > img {
+	width: 80%;
+	transition: transform .2s;
+}
+
+.destination > .destination-place > .pictures > .vacation-pictures > img:hover{
+	border-radius: 25px;
+	transform: scale(1.11);
+	border: 1px solid white;
+}
+
+.destination > .destination-place > .pictures > .vacation-pictures > p{
+	text-align: center;
+	font-style:italic;
+	font-size: 12pt;
+	margin-top: 3px;
+}
+
+.destination > .destination-place > h2{
+	text-align: center;
+	font-style: italic;
+	font-size: 32pt;
+	font-weight: bold;
+	margin-top: 50px;
+}
+
+.destination > .destination-place > .buttons{
+	width: 90%;
+	margin:0px auto;
+	text-align:center;
+}
+
+.destination > .destination-place > .buttons > input{
+	vertical-align: top;
+	text-align:center;
+	width: 39%;
+	margin: 35px;
+	padding: 0px 10px;
+	height: 80px;
+	background-color:#e60000;
+	color: white;
+	font-weight: bold;
+	font-size: 17pt;
+	border: 1px solid white;
+}
+
+.destination > .destination-place > .buttons > input > .btn1{
+	float:left;
+}
+
+.destination > .destination-place > .buttons >  input > .btn2{
+	float: right;
+}
+
+.destination > .destination-place > .buttons > input:hover{
+	background-color:  #ff1a1a;
+	border: 2px solid white;
+	opacity: 0.95;
+}
+
+.destination > .destination-place > .program-puta {
+	margin: 0px 15px;
+	padding-bottom: 20px;
+}
+
+.destination > .destination-place > .program-puta > h3{
+	font-size: 20pt;
+	font-weight: bolder;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+
+.destination > .destination-place > .program-puta > p{
+	margin: 15px 10px;
+	font-size: 14pt;
+	font-weight: bolder;
+}
+
+#main-holder-index > #center-index{
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+#main-holder-index > #center-index > #main-picture{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+#main-holder-index > #center-index > h1 {
+	font-size: 52pt;
+	font-weight: bolder;
+	font-style: italic;
+	color: black;
+	padding-top: 65px;
+	padding-bottom:50px;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+}
+
+
+#main-holder-index > #center-index > #main-picture > img {
+	width: 70%;
+}
+
+#main-holder-index > #center-index > h2 {
+	font-size: 45pt;
+	font-weight: bolder;
+	font-style: italic;
+	color: black;
+	margin-bottom: 100px;
+}
+
+#main-holder-index > #center-index > #div-pictures-index{
+	width: 100%;
+}
+
+#main-holder-index > #center-index > #div-pictures-index > .pictures-index{
+	width: 31%;
+	display: inline-block;
+	margin: 0px 15px;
+	vertical-align: top;
+}
+
+#main-holder-index > #center-index > #div-pictures-index > .pictures-index > h2{
+	font-style: italic;
+	font-size: 28pt;
+	color: black;
+}
+
+#main-holder-index > #center-index > #div-pictures-index > .pictures-index > a{
+	width:100%;
+}
+
+#main-holder-index > #center-index > #div-pictures-index > .pictures-index > a > img {
+	width: 100%;
+}
+
+#main-holder-index > #center-index > #div-pictures-index > .pictures-index > a:hover > img{
+	border-radius: 30px;
+	opacity: 0.8;
+}
+
+footer {
+	width: 100%;
+	background-color:#004080;
+	color: white;
+	text-align: center;
+	padding-top:10px;
+}
+
+footer > .footer-div{
+	width: 21%;
+	display: inline-block;
+	margin: 0px 25px;
+	vertical-align: top;
+}
+
+footer > .footer-div > h3{
+	font-style: italic;
+	padding-top:5px;
+	padding-bottom: 10px;
+}
+
+footer > .footer-div > iframe{
+	margin-top:10px;
+}
+
+footer > .footer-div > p > a{
+	color: white;
+}
+
+footer > .footer-div > ul{
+	margin-top: 25px;
+	list-style: none;
+}
+
+footer > .footer-div > ul > li{
+	padding-bottom: 4px;
+}
+
+footer > .footer-div > ul > li > a{
+	color:white;
+}
+
+footer > .footer-div > ul > li > a:hover{
+	background-color: white;
+	border-radius: 3px;
+	color: #004080;
+}
+
+footer > .footer-div > #social-media{
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+
+footer > .footer-div > #social-media > a:hover{
+	opacity: 0.8;
+}
+
+footer > .footer-div > #e-mail{
+	margin-top: 10px;
+	padding-left: 5px;
+	width: 70%;
+}
+
+footer > .footer-div > #send{
+	margin-top:10px;
+	margin-left: 2px;
+	padding: 2px 0px;
+	color: #004080;
+	background-color: white;
+	border-radius: 2px;
+	width: 16%;
+	border: none;
+}
+
+footer > p{
+	padding: 10px 0px;
+	font-size: 10pt;
+}
+
+footer > p > a{
+	color:white;
+}
